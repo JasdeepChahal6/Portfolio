@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasdeep Chahal's Portfolio</title>
+
+    <!--Montserrat Style Font-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!--LeafLet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!--BootStrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid px-0"> <!--container-fluid is bootstrap class and px-0 is utility class to set padding to 0-->
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg navbar-light shadow">  <!--BootStrap classes-->
+            <div class="container-fluid">
+                <div class="navabr-brand" href="/"> <!--Forward tag redirects to home page-->
+                    <span class="material-icons-outlined me-1">important_devices </span>
+                    Jasdeep Chahal
+                </div> 
+                <button 
+                type="button" 
+                class="navbar-toggler"
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false"
+                aria-label="Toggle navigation"> <!--Hamburger dropdown menu-->
+                  
+                  <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="container px-3"> <!--BS class that sets fixed width container, px-3 sets padding left and right to 3-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--BS class that naturally changes navbar on smaller devices-->
+                        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0"><!--ms sets, margin start auto, left to right design-->
+                            <li class="nav-item">
+                                <!--<div class="nav-class me-lg-3" href="/">Home</siv> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-class me-lg-3" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-class me-lg-3" href="#projects">Projects</a>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-class me-lg-3" href="#testimonials">Testimonials</a>
+                            </li>-->
+                            <li class="nav-item">
+                                <a class="nav-class me-lg-3" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+
+        <!--Hero-->
+        <header class="bg-light py-5"> <!--Background light text dark with padding of 5 top and bottom-->
+            <div class="container px-5">
+                <div class="row align-items-center"> <!--Bootstrap 12 grid style-->
+                    <div class="col-lg-8 col-xl-7 col-xxl-6"><!--3 Bootstrap classes that span the colums  out of 12 depending on the screen, number of colums decrease as screen size increases-->
+                        <div class="my-5"> <!--margin on y-axis-->
+                            <h2 class="text-center fw-bold mb-2">Hello. I'm Jasdeep Chahal</h2> 
+                            <h2 class="text-primary text-center fw-bold mb-2">Aspiring Software Engineer | Computer Science Student</h2> <!--text  sets color-->
+                            <p class="lead text-muted mb-4"> <!--lead increases font size, muted set color inside to gray-->
+                                
+                            </p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                                <a class="btn btn-primary btn-lg text-uppercase" href="#about"> <!--large blue button leading to about page-->
+                                    Learn More
+                                    <span class="material-icons-outlined ms-2">help_outline</span>
+                                </a> 
+                                <a class="btn btn-outline-primary btn-lg text-uppercase" href="#projects"> 
+                                    View My Work
+                                    <span class="material-icons-outlined ms-2">manage_search</span>
+                                </a> 
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-xl-5 col-xxl-6 justify-content-center"> <!--colums increase as screen increases, display itmes centered-->
+                        <img class="img-fluid rounded-3 my-5" src="1683128792165.jpg" alt="hero image"> <!--responsive with fluid, scales with parent (div), rounds corners -->
+                    </div> 
+                </div> 
+            </div> <!--contianer with padding left and right to 5-->
+        </header>
+
+
+        <main> <!--specifies the main content of a page (not repaeated)-->
+
+            <!--About-->
+            <section id="about" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">About</h2>
+                        <p class="lead text-muted mb-5">
+                            <li class="lead text-muted mb-5">Computer Science student at Rutgers University–New Brunswick, graduating in 2026.</li>
+                            <li class="lead text-muted mb-5">Experienced in full-stack web development, including creating responsive and dynamic applications.</li>
+                            <li class="lead text-muted mb-5">Proficient in languages; Java, JavaScript, SQL</li>
+                            <li class="lead text-muted mb-5">Passionate about building innovative software solutions and expanding technical expertise.</li>
+
+                        </p>
+                    </div> 
+                </div>
+                <!--NOTES ABOUT SECTION-->
+            </section>
+
+            <hr>
+
+            <!--Projects-->
+            
+            <section id="projects" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Projects</h2>
+                        <p class="lead text-muted mb-5">My Projects</p>
+                    </div> 
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card h-100 shadow-lg border-0 bg-light"><!--Card container, height 100% of div, added shadow, and removes border, backgroundcolor to light-->
+                                <img class="card-img-top" src="Screenshot 2025-01-17 103435.png" alt="Project 1">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Social Media Clone</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">JS</div>
+                                        <div class="badge bg-primary rounded-pill">SQL</div>
+                                        <!--<div class="badge bg-primary rounded-pill">Mt-Ui</div>-->
+                                    </div>
+                                    <p class="card-text">
+                                        A full-stack social media platform with user authentication and dynamic content integration. 
+                                    </p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3"> <!--Adds footer to card, backgr transparent-->
+                                    <a class="btn btn-outline-primary btn-sm text-uppercase" href="https://github.com/JasdeepChahal6/social-media-app" target="_blank">
+                                        <span class="material-icons-outlined me-1">code</span>
+                                        Source Code
+                                    </a>
+                                </div> 
+                            </div>    
+                    </div>
+                </div>
+
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mx-auto mb-5">
+                            <div class="card h-100 shadow-lg border-0 bg-light"><!--Card container, height 100% of div, added shadow, and removes border, backgroundcolor to light-->
+                                <img class="card-img-top" src="Screenshot 2024-06-11 095138 copy.png" alt="Project 1">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">To-Do List</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-primary rounded-pill">HTML</div>
+                                        <div class="badge bg-primary rounded-pill">CSS</div>
+                                        <!--<div class="badge bg-primary rounded-pill">Mt-Ui</div>-->
+                                    </div>
+                                    <p class="card-text">
+                                        A responsive task management tool to organize daily activities. 
+                                    </p>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3"> <!--Adds footer to card, backgr transparent-->
+                                    <a class="btn btn-outline-primary btn-sm text-uppercase" href="https://github.com/JasdeepChahal6/ToDo" target="_blank">
+                                        <span class="material-icons-outlined me-1">code</span>
+                                        Source Code
+                                    </a>
+                                </div> 
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+
+            <!--Testimonials-->
+           
+
+            <!--Contact-->
+            <section id="contact" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold">Contact</h2>
+                        <p class="lead text-muted mb-5">Feel Free to Reach Out</p>
+                    </div> 
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-xl-5 col-xxl-6 mb-5">
+                            <div id="map"></div>
+                        </div>
+                        <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+                            <div class="mb-5">
+                                <h6 class="text-uppercase mb-2">Located</h6>
+                                <p class="lead mb-0">Lumberton, New Jersey</p>
+                            </div>
+                            <div class="mb-5">
+                                <h6 class="text-uppercase mb-2">LinkedIn</h6>
+                                <a class="lead mb-0" href="https://www.linkedin.com/in/jasdeep-chahal999/"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" /></a>
+                            </div>
+                            <div class="mb-5">
+                                <h6 class="text-uppercase mb-2">Email</h6>
+                                <p class="lead mb-0">jchahalwork@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main> 
+    </div> 
+
+
+    <hr>
+    <!--TESTIMONIALS-->
+ 
+    <!--Footer-->
+    
+
+    <!--LeafLet JS-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!--BootStrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
